@@ -10,11 +10,11 @@ app.proxy = true;
 app.use(bodyParser());
 
 app.use(async (ctx, next) => {
-  console.log( 'request received', {method: ctx.method, path: ctx.path} );
+  console.log('request received', { method: ctx.method, path: ctx.path });
   await next();
-})
+});
 
 app.use(router.routes());
 
-console.log( `Server listening on port: ${PORT}` );
-const server = app.listen( PORT );
+console.log(`Server listening on port: ${PORT}`);
+const server = app.listen(PORT);

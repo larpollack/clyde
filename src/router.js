@@ -1,10 +1,10 @@
 const Router = require('koa-router'),
-router = new Router(),
-model = require('./rhinoceros');
+  router = new Router(),
+  model = require('./rhinoceros');
 
 router.get('/rhinoceros', (ctx, next) => {
   const rhinoceroses = model.getAll();
-  ctx.response.body = {rhinoceroses};
+  ctx.response.body = { rhinoceroses };
 });
 
 router.post('/rhinoceros', (ctx, next) => {

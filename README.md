@@ -30,12 +30,7 @@ Add a new route to the API that allows a user to fetch a specific Rhino by its I
 The Create Rhino route contains no validation. Add validation to the route that satisfies the following criteria:
 
 - The body of the request must contain a `name` key with a string value between 1 and 20 characters in length.
-- The body of the request must contain a `species` key with a string value representing the species of the Rhino to be added. This value must be one of the following:
--- `white_rhinoceros`
--- `black_rhinoceros`
--- `indian_rhinoceros`
--- `javan_rhinoceros`
--- `sumatran_rhinoceros`
+- The body of the request must contain a `species` key with a string value representing the species of the Rhino to be added. This value must be one of the following: `white_rhinoceros`, `black_rhinoceros`, `indian_rhinoceros`, `javan_rhinoceros`, `sumatran_rhinoceros`
 - The body should contain no additional keys.
 
 If the above criteria are not met the route should return an appropriate error response.
@@ -62,8 +57,7 @@ The following node modules are used as part of the project and you may wish to r
 ## Testing the API
 Feel free to test the API with whatever tool is most comfortable for you. We prefer using curl or Postman.
 
-[You can get postman here]
-(https://www.getpostman.com/apps)
+[You can get postman here](https://www.getpostman.com/apps)
 
 Here are example curl commands for the default routes:
 

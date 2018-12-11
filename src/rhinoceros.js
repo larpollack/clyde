@@ -1,5 +1,5 @@
-const uuidv4 = require('uuid/v4');
-let rhinoceroses = require('./data');
+const uuidv4 = require("uuid/v4");
+let rhinoceroses = require("./data");
 
 exports.getAll = () => {
   return rhinoceroses;
